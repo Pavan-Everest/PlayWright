@@ -12,7 +12,7 @@ test('Test Case 21: Add review on product', async ({ page }) => {
     await expect(page).toHaveURL(/.*\/product_details/);
     await page.locator('#name').fill('Hemil Turakhia');
     await page.locator('#email').fill('hemilturakhia@gmail.com');
-    await page.waitForTimeout(5000); // Waits for 3 seconds
+    // await page.waitForTimeout(5000); // Waits for 3 seconds
     await page.locator('#review').fill('Very good product');
     await page.locator('#button-review').click();
 });
